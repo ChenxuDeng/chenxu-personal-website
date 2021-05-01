@@ -183,7 +183,7 @@ function Title(props) {
                 <div style={{height:'50px'}}> </div>
                 <Fade in timeout={{enter:3600,exit:3600}}>
                     <div className={classes.logo}>
-                        <img src={logo} alt="logo" style={{width:'450px'}}/>
+                        <img src={logo} alt="logo" style={{width:'450px',height:'490px'}}/>
                     </div>
                 </Fade>
                 {xsMatch?null:arrowDown}
