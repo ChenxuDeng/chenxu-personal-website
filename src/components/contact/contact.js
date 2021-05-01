@@ -19,7 +19,6 @@ function Contact(props) {
                 fontFamily:'Poppins',
                 color:'#f2d2aa',
                 marginTop:'16em',
-                width:'800px',
                 fontSize:'21px',
                 fontWeight:'bold'
             },
@@ -161,7 +160,7 @@ function Contact(props) {
                 </div>
             </div>
 
-            <div style={{display:'flex',justifyContent:'center',marginLeft:'36px'}}>
+            <div style={{display:'flex',marginLeft:'10px'}}>
                 <div>
                     <div className={classes.title}>
                         The End
@@ -186,7 +185,7 @@ function Contact(props) {
                     </div>
                 </div>
             </div>
-            <div className={classes.social} style={{marginLeft:'16px'}}>
+            <div className={classes.social} style={{marginLeft:'10px'}}>
                 <div className={classes.card}>
                     <img src={qrCode} alt="qrCode" style={{height:'56px',width:'56px'}}/>
                     <img src={wechat} alt="wechat" style={{height:'36px',width:'36px',backgroundColor:'white',borderRadius:7,marginLeft:'20px'}}/>

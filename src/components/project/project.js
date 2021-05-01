@@ -62,7 +62,7 @@ function Project(props) {
             <div className={classes.title}>
                 Show Case
             </div>
-            <div style={{display:'flex',justifyContent:'center',marginLeft:'16px'}}>
+            <div style={{display:'flex',justifyContent:'center'}}>
                 <div style={{marginRight:'10px'}}>
                     <div className={classes.imageFrame} style={{marginBottom:'6px'}}>
                         <a href="https://mui-burger.web.app/" rel={'noopener noreferrer'} target={'_blank'}>

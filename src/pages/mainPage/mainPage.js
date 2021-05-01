@@ -15,7 +15,7 @@ function MainPage(props) {
     return (
         <React.Fragment>
             <Navigation/>
-            <div style={{width:'800px',margin:'0 auto'}}>
+            <div style={{width:'50rem',margin:'0 auto'}}>
                 <Title/>
                 {animation?<About/>:null}
                 {animation?<Skill/>:null}
