@@ -1,5 +1,4 @@
 {
-  "homepage": "http://ChenxuDeng.github.io/personal-website",
   "name": "chenxu-personal-website",
   "version": "0.1.0",
   "private": true,
@@ -10,6 +9,7 @@
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^12.8.3",
     "chart.js": "^2.9.4",
+    "cnpm": "^6.2.0",
     "emailjs-com": "^2.6.4",
     "jquery": "^3.6.0",
     "react": "^17.0.2",
