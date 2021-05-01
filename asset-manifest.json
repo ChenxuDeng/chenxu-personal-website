@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/chenxu-personal-website/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/chenxu-personal-website/static/js/main.50b95950.chunk.js",
-    "main.js.map": "/chenxu-personal-website/static/js/main.50b95950.chunk.js.map",
+    "main.js": "/chenxu-personal-website/static/js/main.30a8595b.chunk.js",
+    "main.js.map": "/chenxu-personal-website/static/js/main.30a8595b.chunk.js.map",
     "runtime-main.js": "/chenxu-personal-website/static/js/runtime-main.a918e80b.js",
     "runtime-main.js.map": "/chenxu-personal-website/static/js/runtime-main.a918e80b.js.map",
     "static/js/2.0ba3869d.chunk.js": "/chenxu-personal-website/static/js/2.0ba3869d.chunk.js",
@@ -30,6 +30,6 @@
     "static/js/runtime-main.a918e80b.js",
     "static/js/2.0ba3869d.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.50b95950.chunk.js"
+    "static/js/main.30a8595b.chunk.js"
   ]
 }
