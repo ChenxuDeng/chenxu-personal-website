@@ -1,0 +1,3 @@
+export {
+    animationHandler
+} from './mainPage'
