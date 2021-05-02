@@ -37,7 +37,15 @@ function Title(props) {
                 justifyContent:'center',
                 marginTop:'7em',
                 [theme.breakpoints.down('xs')]:{
-                    marginTop: '16em'
+                    marginTop: '10em'
+                }
+            },
+            logoImg:{
+                width:'450px',
+                height:'490px',
+                [theme.breakpoints.down('xs')]:{
+                    width:'260px',
+                    height:'280px'
                 }
             }
         }
@@ -183,7 +191,7 @@ function Title(props) {
                 <div style={{height:'50px'}}> </div>
                 <Fade in timeout={{enter:3600,exit:3600}}>
                     <div className={classes.logo}>
-                        <img src={logo} alt="logo" style={{width:'450px',height:'490px'}}/>
+                        <img src={logo} alt="logo" className={classes.logoImg}/>
                     </div>
                 </Fade>
                 {xsMatch?null:arrowDown}

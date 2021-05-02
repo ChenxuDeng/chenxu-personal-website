@@ -20,18 +20,28 @@ function Contact(props) {
                 color:'#f2d2aa',
                 marginTop:'16em',
                 fontSize:'21px',
-                fontWeight:'bold'
+                fontWeight:'bold',
+                [theme.breakpoints.down('xs')]:{
+                    fontSize: '18px'
+                }
             },
             card:{
                 display:'flex',
                 alignItems:'center',
                 background:'hsla(0,0%,100%,.15)',
-                width:'187px',
-                height:'80px',
                 borderRadius:6,
                 paddingLeft:'12px',
                 paddingRight:'12px',
-                justifyContent:'center'
+                justifyContent:'center',
+                height:'auto',
+                margin:'0 auto',
+                paddingTop:'30px',
+                paddingBottom:'30px',
+                marginTop:'30px',
+                width:'600px',
+                [theme.breakpoints.down('xs')]:{
+                    width:'330px'
+                }
             },
             input:{
                 "& .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline": {
@@ -48,14 +58,90 @@ function Contact(props) {
             social:{
                 margin:'0 auto',
                 display:'flex',
-                marginTop:'3em'
+                marginTop:'3em',
+                width:'45rem',
+                [theme.breakpoints.down('xs')]:{
+                    width:'auto'
+                }
+            },
+            form:{
+                display:'flex',
+                width:'225px',
+                [theme.breakpoints.down('xs')]:{
+                    width:'145px'
+                }
+            },
+            formMsg:{
+                display:'flex',
+                width:'470px',
+                [theme.breakpoints.down('xs')]:{
+                    width:'310px'
+                }
+            },
+            font:{
+                fontFamily:'Poppins',
+                color:'#f2d2aa',
+                fontSize:'30px',
+                [theme.breakpoints.down('xs')]:{
+                    fontSize:'24px'
+                }
+            },
+            font1:{
+                fontFamily:'Poppins',
+                color:'#f2d2aa',
+                opacity:0.7,
+                fontSize:'13px',
+                [theme.breakpoints.down('xs')]:{
+                    fontSize:'10px',
+                    marginLeft:'3px'
+                }
+            },
+            container:{
+                width:'45rem',
+                [theme.breakpoints.down('xs')]:{
+                    width:'auto'
+                }
+            },
+            end:{
+                display:'flex',
+                marginLeft:'10px',
+                justifyContent:'center'
+            },
+            contactCard:{
+                display:'flex',
+                alignItems:'center',
+                background:'hsla(0,0%,100%,.15)',
+                borderRadius:6,
+                paddingLeft:'30px',
+                paddingRight:'30px',
+                justifyContent:'center',
+                height:'auto',
+                margin:'0 auto',
+                paddingTop:'12px',
+                paddingBottom:'12px',
+                marginTop:'30px',
+                marginBottom:'30px',
+                [theme.breakpoints.down('xs')]:{
+                    display:'flex',
+                    alignItems:'center',
+                    background:'hsla(0,0%,100%,.15)',
+                    borderRadius:6,
+                    paddingLeft:'50px',
+                    paddingRight:'50px',
+                    justifyContent:'center',
+                    height:'auto',
+                    margin:'0 auto',
+                    paddingTop:'30px',
+                    paddingBottom:'30px',
+                    marginTop:'30px'
+                }
             }
         }
     })
 
     const classes=useStyle()
     const theme=useTheme()
-    const smMatch=useMediaQuery(theme.breakpoints.down('sm'))
+    const xsMatch=useMediaQuery(theme.breakpoints.down('xs'))
 
     function sendEmail(e) {
         e.preventDefault();
@@ -101,22 +187,66 @@ function Contact(props) {
         }
     },[name,email,message])
 
+    const largeContact=<div className={classes.social}>
+        <div className={classes.contactCard}>
+            <img src={qrCode} alt="qrCode" style={{height:'56px',width:'56px'}}/>
+            <img src={wechat} alt="wechat" style={{height:'36px',width:'36px',backgroundColor:'white',borderRadius:7,marginLeft:'20px'}}/>
+            <div style={{color:'#f2d2aa',fontFamily:'poppins',marginLeft:'6px'}}>
+                WeChat
+            </div>
+        </div>
+        <div className={classes.contactCard} style={{width:'200px',marginLeft:'20px',marginRight:'20px'}}>
+            <img src={emailIcon} alt="email" style={{height:'36px',width:'36px'}}/>
+            <div style={{color:'#f2d2aa',fontFamily:'poppins',marginLeft:'6px'}}>
+                836081346@qq.com
+            </div>
+        </div>
+        <div className={classes.contactCard} style={{marginBottom:'30px'}}>
+            <GitHubButton href="https://github.com/ChenxuDeng" data-color-scheme={"no-preference: light; light: light; dark: dark;"} data-size={'large'}>
+                @ChenxuDeng
+            </GitHubButton>
+        </div>
+    </div>
+
+    const xsContact=<div style={{marginTop:'20px',display:'flex',justifyContent:'center'}}>
+        <div>
+            <div className={classes.contactCard} >
+                <img src={emailIcon} alt="email" style={{height:'36px',width:'36px'}}/>
+                <div style={{color:'#f2d2aa',fontFamily:'poppins',marginLeft:'6px'}}>
+                    836081346@qq.com
+                </div>
+            </div>
+            <div className={classes.contactCard} style={{marginBottom:'30px'}}>
+                <GitHubButton href="https://github.com/ChenxuDeng" data-color-scheme={"no-preference: light; light: light; dark: dark;"} data-size={'large'}>
+                    @ChenxuDeng
+                </GitHubButton>
+            </div>
+            <div className={classes.contactCard} style={{marginBottom:'20px'}}>
+                <img src={qrCode} alt="qrCode" style={{height:'100px',width:'100px'}}/>
+                <img src={wechat} alt="wechat" style={{height:'36px',width:'36px',backgroundColor:'white',borderRadius:7,marginLeft:'20px'}}/>
+                <div style={{color:'#f2d2aa',fontFamily:'poppins',marginLeft:'6px'}}>
+                    WeChat
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     return (
         <React.Fragment>
-            <div style={{margin:'0 auto',marginTop:'16em',textAlign:'center',fontSize:'26px'}} className={classes.title}>
+            <div style={{margin:'0 auto',marginTop:'16em',textAlign:'center'}} className={classes.title}>
                 Leave a Message
             </div>
             <div style={{margin:'0 auto'}}>
-                <div className={classes.card} style={{height:'auto', margin:'0 auto', paddingTop:'30px',paddingBottom:'30px',marginTop:'30px',width:'600px'}}>
+                <div className={classes.card}>
                     <form className="contact-form" onSubmit={sendEmail}>
-                        <div style={{display:'flex',width:'450px'}}>
+                        <div style={{display:'flex'}}>
                             <TextField id="outlined-basic"
                                        label="Your Name"
                                        variant="outlined"
                                        name={'from_name'}
                                        style={{marginRight:'20px'}}
-                                       className={classes.input}
+                                       className={[classes.input,classes.form]}
                                        InputProps={{ style: {fontFamily:'Poppins',color:'#f2d2aa'} }}
                                        value={name}
                                        onChange={nameInputHandler}
@@ -128,7 +258,7 @@ function Contact(props) {
                                        variant="outlined"
                                        name={'user_email'}
                                        type={'email'}
-                                       className={classes.input}
+                                       className={[classes.input,classes.form]}
                                        InputProps={{ style: {fontFamily:'Poppins',color:'#f2d2aa'} }}
                                        value={email}
                                        onChange={emailInputHandler}
@@ -141,9 +271,8 @@ function Contact(props) {
                                        label={'Your Message'}
                                        multiline
                                        variant="outlined"
-                                       style={{width:'450px'}}
                                        rows={4}
-                                       className={classes.input}
+                                       className={[classes.input,classes.formMsg]}
                                        InputProps={{ style: {fontFamily:'Poppins',color:'#f2d2aa'} }}
                                        value={message}
                                        onChange={messageInputHandler}
@@ -160,51 +289,32 @@ function Contact(props) {
                 </div>
             </div>
 
-            <div style={{display:'flex',marginLeft:'10px'}}>
-                <div>
+            <div className={classes.end}>
+                <div className={classes.container}>
                     <div className={classes.title}>
                         The End
                     </div>
-                    <div style={{fontFamily:'Poppins',color:'#f2d2aa',fontSize:'30px'}}>
+                    <div className={classes.font}>
                         Thank you for visiting
                     </div>
-                    <div style={{fontFamily:'Poppins',color:'#f2d2aa',opacity:0.7,fontSize:'13px',marginTop:'16px'}}>
+                    <div style={{marginTop:'16px'}} className={classes.font1}>
                         I love creating websites and apps,
                     </div>
-                    <div style={{fontFamily:'Poppins',color:'#f2d2aa',opacity:0.7,fontSize:'13px'}}>
+                    <div className={classes.font1}>
                         Because I enjoy the unique immersion feeling of coding.
                     </div>
-                    <div style={{fontFamily:'Poppins',color:'#f2d2aa',opacity:0.7,fontSize:'13px'}}>
+                    <div className={classes.font1}>
                         I can speak both English and Mandarin fluently,
                     </div>
-                    <div style={{fontFamily:'Poppins',color:'#f2d2aa',opacity:0.7,fontSize:'13px'}}>
+                    <div className={classes.font1}>
                         I am currently looking for my first job.
                     </div>
-                    <div style={{fontFamily:'Poppins',color:'#f2d2aa',opacity:0.7,fontSize:'13px'}}>
+                    <div className={classes.font1}>
                         Feel free to contact me.
                     </div>
                 </div>
             </div>
-            <div className={classes.social} style={{marginLeft:'10px'}}>
-                <div className={classes.card}>
-                    <img src={qrCode} alt="qrCode" style={{height:'56px',width:'56px'}}/>
-                    <img src={wechat} alt="wechat" style={{height:'36px',width:'36px',backgroundColor:'white',borderRadius:7,marginLeft:'20px'}}/>
-                    <div style={{color:'#f2d2aa',fontFamily:'poppins',marginLeft:'6px'}}>
-                        WeChat
-                    </div>
-                </div>
-                <div className={classes.card} style={{width:'200px',marginLeft:'20px',marginRight:'20px'}}>
-                    <img src={emailIcon} alt="email" style={{height:'36px',width:'36px'}}/>
-                    <div style={{color:'#f2d2aa',fontFamily:'poppins',marginLeft:'6px'}}>
-                        836081346@qq.com
-                    </div>
-                </div>
-                <div className={classes.card} style={{marginBottom:'30px'}}>
-                    <GitHubButton href="https://github.com/ChenxuDeng" data-color-scheme={"no-preference: light; light: light; dark: dark;"} data-size={'large'}>
-                        @ChenxuDeng
-                    </GitHubButton>
-                </div>
-            </div>
+            {xsMatch?xsContact:largeContact}
             <Snackbar open={okSnack} onClose={()=>{setOkSnack(false)}} autoHideDuration={6000} anchorOrigin={{horizontal:'center',vertical:'top'}}>
                 <Alert variant="filled" severity="success" onClose={()=>{setOkSnack(false)}}>
                     Got it! I will reply your message to your email ASAP!

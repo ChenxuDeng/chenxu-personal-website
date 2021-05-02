@@ -9,6 +9,8 @@ import Lottie from "react-lottie-player";
 import soundAnimation from '../../../src/assets/sound.json'
 import music from '../../assets/Tokens - The Lion Sleeps Tonight.flac'
 import {Fade} from "@material-ui/core";
+import useTheme from "@material-ui/core/styles/useTheme";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
 
 let audio=new Audio(music)
 
@@ -62,6 +64,9 @@ function Navigation(props) {
     })
 
     const classes=useStyle()
+    const theme=useTheme()
+    const xsMatch=useMediaQuery(theme.breakpoints.down('xs'))
+
     const [sound,setSound]=useState(false)
     const [navigation,setNavigation]=useState(false)
 
@@ -90,10 +95,10 @@ function Navigation(props) {
                     }}>
                         <Lottie loop animationData={soundAnimation} play={sound}
                                 style={{height: '25px', width: '25px'}}/>
-                        <Typography variant={'caption'} className={classes.typography}
+                        {xsMatch?null:<Typography variant={'caption'} className={classes.typography}
                         >
                             {!sound ? 'Put on some music' : 'The lion sleeps tonight...'}
-                        </Typography>
+                        </Typography>}
                     </div>
                 </Toolbar>
             </AppBar></Fade>:null}

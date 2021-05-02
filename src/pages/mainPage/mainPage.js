@@ -15,13 +15,11 @@ function MainPage(props) {
     return (
         <React.Fragment>
             <Navigation/>
-            <div style={{width:'50rem',margin:'0 auto'}}>
-                <Title/>
-                {animation?<About/>:null}
-                {animation?<Skill/>:null}
-                {animation?<Project/>:null}
-                {animation?<Contact/>:null}
-            </div>
+            <Title/>
+            {animation?<About/>:null}
+            {animation?<Skill/>:null}
+            {animation?<Project/>:null}
+            {animation?<Contact/>:null}
         </React.Fragment>
     );
 }
