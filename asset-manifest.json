@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/chenxu-personal-website/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/chenxu-personal-website/static/js/main.377ecfc8.chunk.js",
-    "main.js.map": "/chenxu-personal-website/static/js/main.377ecfc8.chunk.js.map",
-    "runtime-main.js": "/chenxu-personal-website/static/js/runtime-main.a918e80b.js",
-    "runtime-main.js.map": "/chenxu-personal-website/static/js/runtime-main.a918e80b.js.map",
-    "static/js/2.d964dc0c.chunk.js": "/chenxu-personal-website/static/js/2.d964dc0c.chunk.js",
-    "static/js/2.d964dc0c.chunk.js.map": "/chenxu-personal-website/static/js/2.d964dc0c.chunk.js.map",
-    "static/js/3.e2b4ba6c.chunk.js": "/chenxu-personal-website/static/js/3.e2b4ba6c.chunk.js",
-    "static/js/3.e2b4ba6c.chunk.js.map": "/chenxu-personal-website/static/js/3.e2b4ba6c.chunk.js.map",
+    "main.js": "/chenxu-personal-website/static/js/main.94446342.chunk.js",
+    "main.js.map": "/chenxu-personal-website/static/js/main.94446342.chunk.js.map",
+    "runtime-main.js": "/chenxu-personal-website/static/js/runtime-main.1aeca47a.js",
+    "runtime-main.js.map": "/chenxu-personal-website/static/js/runtime-main.1aeca47a.js.map",
+    "static/js/2.afc54fa0.chunk.js": "/chenxu-personal-website/static/js/2.afc54fa0.chunk.js",
+    "static/js/2.afc54fa0.chunk.js.map": "/chenxu-personal-website/static/js/2.afc54fa0.chunk.js.map",
+    "static/js/3.330fb550.chunk.js": "/chenxu-personal-website/static/js/3.330fb550.chunk.js",
+    "static/js/3.330fb550.chunk.js.map": "/chenxu-personal-website/static/js/3.330fb550.chunk.js.map",
     "index.html": "/chenxu-personal-website/index.html",
     "static/css/main.6dea0f05.chunk.css.map": "/chenxu-personal-website/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.d964dc0c.chunk.js.LICENSE.txt": "/chenxu-personal-website/static/js/2.d964dc0c.chunk.js.LICENSE.txt",
+    "static/js/2.afc54fa0.chunk.js.LICENSE.txt": "/chenxu-personal-website/static/js/2.afc54fa0.chunk.js.LICENSE.txt",
     "static/media/Tokens - The Lion Sleeps Tonight.66314cd9.flac": "/chenxu-personal-website/static/media/Tokens - The Lion Sleeps Tonight.66314cd9.flac",
     "static/media/avatar.5ce5aaf2.jpg": "/chenxu-personal-website/static/media/avatar.5ce5aaf2.jpg",
-    "static/media/background.ae16391d.gif": "/chenxu-personal-website/static/media/background.ae16391d.gif",
+    "static/media/background.21e9e8cd.png": "/chenxu-personal-website/static/media/background.21e9e8cd.png",
     "static/media/background1.d0922c0b.gif": "/chenxu-personal-website/static/media/background1.d0922c0b.gif",
-    "static/media/background2.a99c2a6e.gif": "/chenxu-personal-website/static/media/background2.a99c2a6e.gif",
-    "static/media/background3.55e60f4b.gif": "/chenxu-personal-website/static/media/background3.55e60f4b.gif",
+    "static/media/background2.a12905e7.png": "/chenxu-personal-website/static/media/background2.a12905e7.png",
+    "static/media/background3.6a09f5f0.png": "/chenxu-personal-website/static/media/background3.6a09f5f0.png",
     "static/media/burger builder.3335cfce.png": "/chenxu-personal-website/static/media/burger builder.3335cfce.png",
     "static/media/jianshu.6725f65d.png": "/chenxu-personal-website/static/media/jianshu.6725f65d.png",
     "static/media/jingqi.003e7f1a.png": "/chenxu-personal-website/static/media/jingqi.003e7f1a.png",
@@ -27,9 +27,9 @@
     "static/media/zhihu.149bac2b.png": "/chenxu-personal-website/static/media/zhihu.149bac2b.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.a918e80b.js",
-    "static/js/2.d964dc0c.chunk.js",
+    "static/js/runtime-main.1aeca47a.js",
+    "static/js/2.afc54fa0.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.377ecfc8.chunk.js"
+    "static/js/main.94446342.chunk.js"
   ]
 }
