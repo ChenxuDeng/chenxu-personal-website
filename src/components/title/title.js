@@ -29,7 +29,7 @@ function Title(props) {
             background:{
                 width: '100%',
                 height: '100%',
-                objectFit: 'cover'
+                objectFit:'cover'
             },
             logo:{
                 display:'flex',
@@ -177,10 +177,10 @@ function Title(props) {
             <div style={{position:'relative'}}>
                 {animation?<div style={{position: 'relative', zIndex: -2}}>
                     <div style={{position: 'fixed', height: '100%', width:'100%',left:0}}>
-                        {background?<img src={skillBackground} alt="titleBackground" className={classes.background} rel={'preload'} is={'image'}/>:null}
-                        {background1?<img src={titleBackground} alt="titleBackground" className={classes.background} rel={'preload'} is={'image'}/>:null}
-                        {background2?<img src={projectBackground} alt="titleBackground" className={classes.background} rel={'preload'} is={'image'}/>:null}
-                        {background3?<img src={contactBackground} alt="titleBackground" className={classes.background} style={{objectPosition:'0 0'}} rel={'preload'} is={'image'}/>:null}
+                        {background?<img src={skillBackground} alt="titleBackground" className={classes.background}/>:null}
+                        {background1?<img src={titleBackground} alt="titleBackground" className={classes.background}/>:null}
+                        {background2?<img src={projectBackground} alt="titleBackground" className={classes.background}/>:null}
+                        {background3?<img src={contactBackground} alt="titleBackground" className={classes.background} style={{objectPosition:'0 0'}}/>:null}
                     </div>
                     <div className={classes.filter}>
 
